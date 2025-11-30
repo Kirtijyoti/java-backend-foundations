@@ -9,6 +9,14 @@ public class Student {
         this.marks = marks;
     }
 
+    public double getMarks() {
+        return marks;
+    }
+
+    public String getName(){
+        return name;
+    }
+
     public boolean isPass() {
         return marks >= 40;
     }
