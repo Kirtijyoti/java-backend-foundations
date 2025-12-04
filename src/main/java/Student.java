@@ -1,4 +1,4 @@
-public class Student {
+public class Student implements Comparable<Student>{
     private String name;
     private int rollNumber;
     private double marks;
@@ -27,6 +27,11 @@ public class Student {
                 ", Roll: " + rollNumber +
                 ", Marks: " + marks +
                 ", Result: " + result);
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        return this.getName().compareTo(o.getName());
     }
 
     public static void main(String[] args) {
